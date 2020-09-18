@@ -155,6 +155,6 @@ async function showdata(){
 }
   createelement("Annomaly 1:Multiple users where present for"+(multipleusertime*200)/1000+" seconds through out the session")
   createelement("Annomaly 2:User Was not Present for"+(nousertime*200/1000)+" seconds through out the session")
-  createelement("Annomaly 6:User Accesed Mobile from"+(+mobiledetectcount*60/1000)+" seconds throughout the session")
+  createelement("Annomaly 6:User Accesed Mobile for"+(+mobiledetectcount*60/1000)+" seconds throughout the session")
   createelement("Annomaly 7:User was on call for"+speechdetecttime/3+"seconds time through out the session")
 }

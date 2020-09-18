@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+  
+ 
+   <script  src="face-api.min.js"></script> 
+   
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <!-- <img id="img" src="mobileimage.jpg"/> -->
+ <div class="container">
+ <h3 class="text-white bg-info text-center">Anomalies detection</h3>
+  <div style="float: right;margin-left:0px">
+  <video id="video" width="720" height="560" style="border:solid grey 1px" autoplay muted></video>
+  <canvas style="margin-left: 20px;display:none;" id="canvass"></canvas>
+
+  </div>
+  <div>
+   </div>
+  
+  <div style="float: left;border:solid grey 1px; height:560px;width:350px;overflow:scroll;background-color: lightcyan;" class="">
+    <h5 class="bg-info text-white text-center ">Anomalies</h5>
+    <ul id="log" class="text=danger" type="disk"></ul>
+        </div>
+        <div style="margin-left:90%"> <button style="width:100px;" class="btn btn-danger" onclick="showdata()">Stop</button>
+        </div>
+       
+
+</div>
+</body>
+<script src="./Objecttrack.js"></script>
+</html>
